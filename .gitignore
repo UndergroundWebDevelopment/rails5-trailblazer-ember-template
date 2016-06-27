@@ -40,3 +40,7 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore the test_site directory. During development of this template,
+# test_site can be used to store a site created with this template.
+test_site
