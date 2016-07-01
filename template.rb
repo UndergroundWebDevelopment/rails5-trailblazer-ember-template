@@ -2,7 +2,7 @@ git :init
 git add: ".", commit: %(-m "Initial Commit")
 
 # Install the trailblazer framework:
-gem 'trailblazer', github: 'apotonick/trailblazer'
+gem 'trailblazer'
 gem 'trailblazer-rails'
 
 # Use the Puma server:
@@ -13,7 +13,9 @@ gem 'active_model_serializers', '~> 0.10.0'
 
 # Install the ember-cli-rails gem to allow for easy development of emberjs app(s)
 # inline with the Rails backend:
-gem "ember-cli-rails", github: 'thoughtbot/ember-cli-rails', branch: 'sd-rails-5'
+# NOTE: Using my fork of the gem because the current Rails 5 branch is broken.
+# TODO: Update ember-cli-rails back to the official gem when Rails 5 integration released.
+gem "ember-cli-rails", git: 'https://github.com/UndergroundWebDevelopment/ember-cli-rails', branch: 'sd-rails-5'
 
 # Install the knock gem for JSON web token support:
 gem 'knock'
